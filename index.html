@@ -2,75 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Diksha Bhalerao | Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Background -->
-  <div class="bg"></div>
+<!-- Sparkles -->
+<div class="sparkles"></div>
 
-  <!-- Sparkles -->
-  <div class="sparkles">
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
+<!-- Navbar -->
+<nav>
+  <h2>Diksha</h2>
+  <div class="theme-toggle">
+    <button onclick="setTheme('dark')">🌙</button>
+    <button onclick="setTheme('light')">☀</button>
+    <button onclick="setTheme('accent')">✨</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Diksha Bhalerao</h1>
+    <h3>Frontend Developer • UI/UX Learner</h3>
+    <p>
+      I design clean, user-focused interfaces and build
+      interactive web experiences using modern frontend tools.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects">Explore Projects</a>
+      <a href="#work">UI / UX Work</a>
+      <a href="https://github.com/sof-codes" target="_blank">GitHub</a>
+    </div>
   </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="photo-card">
-      <img src="profile.jpg" alt="Diksha">
+  <div class="hero-card">
+    <img src="https://i.imgur.com/8Km9tLL.png" alt="Profile">
+  </div>
+</section>
+
+<!-- What I Do -->
+<section class="dual" id="work">
+  <div class="card ux">
+    <h2>UI / UX Design</h2>
+    <ul>
+      <li>Clean layouts</li>
+      <li>Visual hierarchy</li>
+      <li>User-focused thinking</li>
+      <li>Wireframes & UI practice</li>
+    </ul>
+  </div>
+
+  <div class="card dev">
+    <h2>Frontend Development</h2>
+    <ul>
+      <li>Responsive websites</li>
+      <li>Interactive UI</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React (learning)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-grid">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React (learning)</span>
+    <span>Figma</span>
+    <span>UI Basics</span>
+    <span>Git</span>
+    <span>GitHub</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+  <h2>Projects & Experiments</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Personal Portfolio</h3>
+      <p>Responsive animated portfolio website</p>
+      <div class="project-buttons">
+        <button disabled>View</button>
+        <button disabled>GitHub</button>
+      </div>
     </div>
 
-    <h1 class="name">Diksha Bhalerao</h1>
-    <p class="subtitle">Frontend Developer · UI/UX Explorer · BCA Student</p>
-
-    <a href="#about" class="btn">Explore</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="glass" id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a BCA student passionate about building modern,
-      futuristic web experiences. I enjoy blending frontend
-      development with UI/UX design to create clean,
-      expressive interfaces.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="glass">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React (Learning)</span>
-      <span>UI / UX</span>
-      <span>Figma</span>
+    <div class="project-card">
+      <h3>UI Practice</h3>
+      <p>Landing pages & interface experiments</p>
+      <div class="project-buttons">
+        <button disabled>Coming Soon</button>
+      </div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section class="glass">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">Portfolio Website</div>
-      <div class="card">Landing Page</div>
-      <div class="card">JavaScript App</div>
+    <div class="project-card">
+      <h3>Frontend Mini Apps</h3>
+      <p>Small JS & React builds</p>
+      <div class="project-buttons">
+        <button disabled>Coming Soon</button>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    Made with ✨ by Diksha Bhalerao
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>Designed & Built by Diksha Bhalerao</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
 
